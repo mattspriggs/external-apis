@@ -1,28 +1,22 @@
-# A starter webpack project for React
+# External APIs - Choose your own adventure!
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
+To get started: 
 
-* Fork this repo
-* Rename your repo according to the app you're building
+* Clone this repo
 
 ```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
+cd consuming-external-apis
+npm install
+npm run dev
 ```
 
-To start the development server with a watcher that rebuilds your code, run `npm run dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
+Choose an API to work with, and let's get building! Find your own, or check out this [comprehensive list of options](https://github.com/public-apis/public-apis).
 
-Additional components should be placed in `client/components`.
+There is a basic API route set up for you - you may wish to use this as a template.
 
-## Separate client/server
+## Things to remember
+* Create the functions that make your API calls in `client/api.js`, and call those functions within your React components.
+* If you choose an API that enforces CORS, you'll need to consume that API from your server-side, and consume your own API from the client-side.
 
-The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
-```sh
-npm run client
-```
-and in the other:
-```sh
-npm run server
-```
-The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
+
 
