@@ -1,9 +1,20 @@
 import React from 'react'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+import { getWelcome } from '../api'
+
+class App extends React.Component {
+  state = {
+    welcomeStatement: ''
+  }
+  componentDidMount () {
+    getWelcome()
+      .then(res => this.setState({ welcomeStatement: res.statement }))
+  }
+  render () {
+    return (
+      <h1>{this.state.welcomeStatement}</h1>
+    )
+  }
 }
 
 export default App
