@@ -1,20 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { getWelcome } from '../api'
 
-class App extends React.Component {
-  state = {
-    welcomeStatement: ''
-  }
-  componentDidMount () {
+function App () {
+  const [welcomeStatement, setWelcomeStatement] = useState('')
+
+  useEffect(() => {
     getWelcome()
-      .then(res => this.setState({ welcomeStatement: res.statement }))
-  }
-  render () {
-    return (
-      <h1>{this.state.welcomeStatement}</h1>
-    )
-  }
+      .then(res => {
+        setWelcomeStatement(res.statement)
+        return null
+      })
+      .catch((err) => {
+        console.error(err.message)
+      })
+  })
+
+  return (
+    <h1>{welcomeStatement}</h1>
+  )
 }
 
 export default App

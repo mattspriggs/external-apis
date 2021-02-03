@@ -1,21 +1,22 @@
 {
   "name": "boilerplate-react-webpack",
   "version": "0.2.2",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "description": "Consuming External APIs",
+  "repository": "https://github.com/dev-academy-challenges/consuming-external-apis.git",
   "main": "server/index.js",
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "client": "webpack-dev-server --hot --inline",
+    "client": "webpack serve --hot --config ./client/webpack.config.js",
     "dev": "run-p dev:client dev:server",
-    "dev:client": "webpack --watch",
+    "dev:client": "npm run webpack --watch",
     "dev:server": "nodemon server",
+    "webpack": "webpack --config ./client/webpack.config.js",
     "start": "run-s build server",
-    "build": "webpack",
+    "build": "npm run webpack",
     "server": "node server",
     "test": "jest --watchAll",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint --ext .js,.jsx ."
   },
   "babel": {
     "presets": [
@@ -54,7 +55,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
