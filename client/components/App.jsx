@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 
 import { getWelcome } from '../api'
 
-function App () {
+function App() {
   const [welcomeStatement, setWelcomeStatement] = useState('')
 
   useEffect(() => {
     getWelcome()
-      .then(res => {
+      .then((res) => {
         setWelcomeStatement(res.statement)
         return null
       })
@@ -16,9 +16,7 @@ function App () {
       })
   })
 
-  return (
-    <h1>{welcomeStatement}</h1>
-  )
+  return <h1>{welcomeStatement}</h1>
 }
 
 export default App
