@@ -23,32 +23,30 @@ There is a basic API route set up for you - you may wish to use this as a templa
 * If you choose an API that enforces CORS or requires an API key, you'll need to consume that API from your server-side, and consume your own API from the client-side (i.e. using your server as a proxy).
 
 #### A. No CORS restrictions, no API key required, simple data structure
-https://www.boredapi.com: suggest a random activity
-https://meowfacts.herokuapp.com: cat facts
-https://dog.ceo/api: dog pictures
-https://thecatapi.com: cat pictures
+https://www.boredapi.com: suggest a random activity<br>
+https://meowfacts.herokuapp.com: cat facts<br>
+https://dog.ceo/api: dog pictures<br>
+https://thecatapi.com: cat pictures<br>
 https://randomfox.ca/floof: random fox pictures
 
 #### B. No CORS restrictions, no API key required, more complex data structure
-https://pokeapi.co/docs/v2: Pokémon
-https://swapi.dev: Star Wars
-https://disneyapi.dev/docs: Disney characters
-https://open-meteo.com/: weather
-https://api.nasa.gov/api.html: a library of APIs from NASA (picture of the day, natural event tracker, etc.)
+https://pokeapi.co/docs/v2: Pokémon<br>
+https://swapi.dev: Star Wars<br>
+https://disneyapi.dev/docs: Disney characters<br>
+https://open-meteo.com/: weather<br>
+https://api.nasa.gov/api.html: a library of APIs from NASA (picture of the day, natural event tracker, etc.)<br>
 https://wheretheiss.at/w/developer: get the latitude and longitude of the International Space Station
 
 #### C. CORS restrictions
-https://www.affirmations.dev: positive affirmations/quotes
-https://github.com/reedwade/metlink-api-maybe: unofficial api for Metlink in Wellington
+https://www.affirmations.dev: positive affirmations/quotes<br>
+https://github.com/reedwade/metlink-api-maybe: unofficial api for Metlink in Wellington<br>
 https://openlibrary.org/developers/api: books
 
 #### D. Require an API key
-https://www.omdbapi.com: movies
-https://developer.marvel.com: Marvel comics
-https://the-one-api.dev: Lord of the Rings
-https://data.rijksmuseum.nl/object-metadata/api: Rijksmuseum (art)
+https://www.omdbapi.com: movies<br>
+https://developer.marvel.com: Marvel comics<br>
+https://the-one-api.dev: Lord of the Rings<br>
+https://data.rijksmuseum.nl/object-metadata/api: Rijksmuseum (art)<br>
 https://docs.opencollective.com/help/contributing/development/api: GraphQL
 
 If any of the examples in this list are out of date, please tell one of your facilitators or raise a Pull Request on this repo!
-
-
