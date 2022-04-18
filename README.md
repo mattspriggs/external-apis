@@ -39,7 +39,6 @@ There is a basic API route set up for you - you may wish to use this as a templa
 
 #### C. CORS restrictions
 * https://www.affirmations.dev: positive affirmations/quotes
-* https://github.com/reedwade/metlink-api-maybe: unofficial api for Metlink in Wellington
 * https://openlibrary.org/developers/api: books
 
 #### D. Require an API key
@@ -47,6 +46,8 @@ There is a basic API route set up for you - you may wish to use this as a templa
 * https://developer.marvel.com: Marvel comics
 * https://the-one-api.dev: Lord of the Rings
 * https://data.rijksmuseum.nl/object-metadata/api: Rijksmuseum (art)
+* https://opendata.metlink.org.nz: Metlink (Wellington public transport)
+* https://dev-portal.at.govt.nz: Auckland Transport
 * https://docs.opencollective.com/help/contributing/development/api: GraphQL
 
 If any of the examples in this list are out of date, please tell one of your facilitators or raise a Pull Request on this repo!
