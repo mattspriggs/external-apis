@@ -1,8 +1,12 @@
 # External APIs - Choose your own adventure!
 
-To get started: 
+## Intro
 
-* Clone this repo
+This exercise is about exploring the world of APIs available to us. 
+
+In addition to hitting our own APIs with JavaScript, we can also make use of APIs exposed from all around the Internet! As how the API works (and what routes are exposed to us) depends on how it was coded by the developer or team of developers who created it, part of learning how to use external APIs is also about learning how to read their documentation.
+
+## Getting started
 
 ```sh
 cd consuming-external-apis
@@ -10,39 +14,38 @@ npm install
 npm run dev
 ```
 
-Choose an API to work with, and let's get building! Some possibilities are listed below, or find one of your own!
+Choose an API to work with, and let's get building! 
 
-If you're not sure where to start, we recommend:
-  * First use one from lists A or B (these can be consumed from your client-side code)
-  * Then use one from lists C or D, or find another API for yourself, to practice using a server-side proxy
+Some possibilities are listed below if you want a place to start, otherwise find one of your own!
 
-There is a basic API route set up for you - you may wish to use this as a template.
-
-#### Things to remember
+#### Things to take note of:
 * Create the functions that make your API calls in `client/apiClient.js`, and call those functions within your React components.
-* If you choose an API that enforces CORS or requires an API key, you'll need to consume that API from your server-side, and consume your own API from the client-side (i.e. using your server as a proxy).
+* There is a basic API route set up for you - you may wish to use this as a template.
+* If you choose an API that enforces CORS, you'll need to consume that API from your server-side, and consume your own API from the client-side (i.e. using your server as a proxy).
+* If you choose and API that requires a key or other authentication token, you will need to create a .env (to keep your key hidden from git).
 
-#### A. No CORS restrictions, no API key required, simple data structure
-* https://www.boredapi.com: suggest a random activity<br>
-* https://meowfacts.herokuapp.com: cat facts<br>
-* https://dog.ceo/api: dog pictures<br>
-* https://thecatapi.com: cat pictures<br>
+## API Suggestions
+
+If you're not sure where to start, you can use one of the APIs listed below. 
+
+#### Simple APIs (no API key required or CORS restrictions)
+* https://www.boredapi.com: suggest a random activity
+* https://dog.ceo/api: dog pictures
 * https://randomfox.ca/floof: random fox pictures
-
-#### B. No CORS restrictions, no API key required, more complex data structure
 * https://pokeapi.co/docs/v2: Pokémon
 * https://swapi.dev: Star Wars
 * https://disneyapi.dev/docs: Disney characters
 * https://open-meteo.com/: weather
-* https://api.nasa.gov/api.html: a library of APIs from NASA (picture of the day, natural event tracker, etc.)
 * https://wheretheiss.at/w/developer: get the latitude and longitude of the International Space Station
+* https://eda-te-reo.herokuapp.com: get Maori proverbs and translations
 
-#### C. CORS restrictions
+#### APIs with CORS restrictions (serverside proxy required)
 * https://www.affirmations.dev: positive affirmations/quotes
 * https://openlibrary.org/developers/api: books
 
-#### D. Require an API key
+#### API key required (.env file)
 * https://www.omdbapi.com: movies
+* https://thecatapi.com: cat pictures
 * https://developer.marvel.com: Marvel comics
 * https://the-one-api.dev: Lord of the Rings
 * https://data.rijksmuseum.nl/object-metadata/api: Rijksmuseum (art)
@@ -50,4 +53,8 @@ There is a basic API route set up for you - you may wish to use this as a templa
 * https://dev-portal.at.govt.nz: Auckland Transport
 * https://docs.opencollective.com/help/contributing/development/api: GraphQL
 
-If any of the examples in this list are out of date, please tell one of your facilitators or raise a Pull Request on this repo!
+#### API Collections
+* https://api.nasa.gov/api.html: a library of APIs from NASA (picture of the day, natural event tracker, etc.)
+* https://github.com/public-apis/public-apis: a LOT of APIs
+
+If any of the examples in this list are out of date, please let your facilitators know and create a Pull Request on this repo!
