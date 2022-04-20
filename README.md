@@ -55,6 +55,6 @@ If you're not sure where to start, you can use one of the APIs listed below.
 
 #### API Collections
 * https://api.nasa.gov/api.html: a library of APIs from NASA (picture of the day, natural event tracker, etc.)
-* https://github.com/public-apis/public-apis: a LOT of APIs
+* https://github.com/public-apis/public-apis: a LOT of APIs (inaccurate in places, use this to help start your search but you'll have to investigate the APIs themselves)
 
 If any of the examples in this list are out of date, please let your facilitators know and create a Pull Request on this repo!
