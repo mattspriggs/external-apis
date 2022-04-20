@@ -48,6 +48,7 @@ If you're not sure where to start, you can use one of the APIs listed below.
 * https://thecatapi.com: cat pictures
 * https://developer.marvel.com: Marvel comics
 * https://the-one-api.dev: Lord of the Rings
+* https://www.tepapa.govt.nz/learn/research/datasets/collections-api Te Papa Collections
 * https://data.rijksmuseum.nl/object-metadata/api: Rijksmuseum (art)
 * https://opendata.metlink.org.nz: Metlink (Wellington public transport)
 * https://dev-portal.at.govt.nz: Auckland Transport
