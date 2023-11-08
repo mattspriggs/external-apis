@@ -1,6 +1,7 @@
 import express from 'express'
 import { Welcome } from '../../models/welcome.ts'
-
+import 'dotenv/config'
+import request from 'superagent'
 const router = express.Router()
 
 // GET /api/v1/welcome/
@@ -15,5 +16,7 @@ router.get('/', (req, res) => {
     }
   }
 })
+
+router.get('/')
 
 export default router
