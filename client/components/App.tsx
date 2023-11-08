@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { getWelcome } from '../apiClient.ts'
 import Activity from './Activity.tsx'
+import Affirmation from './Affirmation.tsx'
+import Lotr from './Lotr.tsx'
 function App() {
   const [welcomeStatement, setWelcomeStatement] = useState('')
   // const [activity, setActivity] = useState(Activity)
@@ -20,6 +22,8 @@ function App() {
       <h1>{welcomeStatement}</h1>
       <div>
         <Activity />
+        <Affirmation />
+        <Lotr />
       </div>
     </>
   )
