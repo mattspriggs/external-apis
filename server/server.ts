@@ -17,15 +17,23 @@ server.use(express.static(join(__dirname, './public')))
 server.use('/api/v1/welcome', welcome)
 
 server.get('/api/v1/affirmation', async (req, res) => {
-  const response = await request.get('https://affirmations.dev')
-  res.json(response.body)
+  try {
+    const response = await request.get('https://affirmations.dev')
+    res.json(response.body)
+  } catch (error) {
+    res.sendStatus(400)
+  }
 })
 
 server.get('/api/v1/lotr', async (req, res) => {
-  const response = await request
-    .get('https://the-one-api.dev/v2/movie')
-    .set('Authorization', `${process.env.LOTRKEY}`)
-  res.json(response.body.docs)
+  try {
+    const response = await request
+      .get('https://the-one-api.dev/v2/movie')
+      .set('Authorization', `${process.env.LOTRKEY}`)
+    res.json(response.body.docs)
+  } catch (error) {
+    res.sendStatus(400)
+  }
 })
 
 export default server
