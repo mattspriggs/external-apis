@@ -21,7 +21,7 @@ server.get('/api/v1/affirmation', async (req, res) => {
     const response = await request.get('https://affirmations.dev')
     res.json(response.body)
   } catch (error) {
-    res.sendStatus(400)
+    res.sendStatus(500).json({ message: 'Unable to load affirmations' })
   }
 })
 
@@ -32,7 +32,9 @@ server.get('/api/v1/lotr', async (req, res) => {
       .set('Authorization', `${process.env.LOTRKEY}`)
     res.json(response.body.docs)
   } catch (error) {
-    res.sendStatus(400)
+    res
+      .sendStatus(500)
+      .json({ message: 'Unable to load Lord of the Rings movie facts' })
   }
 })
 

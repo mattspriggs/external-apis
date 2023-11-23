@@ -14,7 +14,7 @@ export default function Affirmation() {
     try {
       fetchAffirmation()
     } catch (error) {
-      console.log(error)
+      alert('Unable to get an affirmation')
     }
   }, [])
 

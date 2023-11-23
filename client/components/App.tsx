@@ -13,7 +13,7 @@ function App() {
         setWelcomeStatement(res.statement)
       })
       .catch((err) => {
-        console.error(err.message)
+        err.alert('Unable to get welcome message')
       })
   })
 

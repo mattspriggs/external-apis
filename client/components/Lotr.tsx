@@ -10,7 +10,7 @@ export default function Lotr() {
     try {
       setLotr(lotrData)
     } catch (error) {
-      console.log(error)
+      alert('Unable to get Lord of the Rings movie facts')
     }
   }
 
@@ -18,7 +18,7 @@ export default function Lotr() {
     try {
       fetchLotr()
     } catch (error) {
-      console.log(error)
+      alert('Unable to get Lord of the Rings movie facts')
     }
   }, [])
 

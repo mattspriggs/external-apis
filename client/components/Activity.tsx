@@ -15,7 +15,7 @@ export default function Activity() {
     try {
       fetchActivity()
     } catch (error) {
-      console.log(error)
+      alert('Unable to get an activity')
     }
   }, [])
 
