@@ -3,6 +3,7 @@ import { getWelcome } from '../apiClient.ts'
 import Activity from './Activity.tsx'
 import Affirmation from './Affirmation.tsx'
 import Lotr from './Lotr.tsx'
+import { response } from 'express'
 function App() {
   const [welcomeStatement, setWelcomeStatement] = useState('')
   // const [activity, setActivity] = useState(Activity)
@@ -13,7 +14,7 @@ function App() {
         setWelcomeStatement(res.statement)
       })
       .catch((err) => {
-        err.alert('Unable to get welcome message')
+        alert('Unable to get welcome message...')
       })
   })
 
